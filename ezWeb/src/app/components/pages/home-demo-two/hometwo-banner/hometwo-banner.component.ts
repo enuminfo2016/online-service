@@ -15,7 +15,7 @@ export class HometwoBannerComponent implements OnInit {
 
     mainBannerItem = [
         {
-            title: 'Fresh Fruits',
+            title: 'Category 1',
             paragraph: '',
             buttonIcon: 'bx bx-shopping-bag',
             buttonText: 'SHOP NOW',
@@ -23,7 +23,7 @@ export class HometwoBannerComponent implements OnInit {
             image: 'assets/img/banner-img1.png'
         },
         {
-            title: 'Fresh Vegetables',
+            title: 'Category 2',
             paragraph: '',
             buttonIcon: 'bx bx-shopping-bag',
             buttonText: 'SHOP NOW',
@@ -31,7 +31,7 @@ export class HometwoBannerComponent implements OnInit {
             image: 'assets/img/banner-img2.png'
         },
         {
-            title: 'Fresh Meat',
+            title: 'Category 3',
             paragraph: '',
             buttonIcon: 'bx bx-shopping-bag',
             buttonText: 'SHOP NOW',

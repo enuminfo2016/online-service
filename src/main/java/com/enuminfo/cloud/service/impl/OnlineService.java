@@ -97,7 +97,8 @@ public class OnlineService implements IOnlineService {
 						if (optionalCategory.isPresent())
 							category = optionalCategory.get();
 					}
-					dtos.add(CatalogProductMapper.getInstance().conertModelToDto(model, product, category));
+					if (category.getId() == Long.parseLong(value))
+						dtos.add(CatalogProductMapper.getInstance().conertModelToDto(model, product, category));
 				});
 			}
 		});
@@ -120,7 +121,8 @@ public class OnlineService implements IOnlineService {
 				if (optionalCategory.isPresent())
 					category = optionalCategory.get();
 			}
-			dto = CatalogProductMapper.getInstance().conertModelToDto(model, product, category);
+			if (product.getId() == Long.parseLong(value))
+				dto = CatalogProductMapper.getInstance().conertModelToDto(model, product, category);
 		}
 		return dto;
 	}
